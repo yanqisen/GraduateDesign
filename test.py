@@ -43,9 +43,7 @@ def check(model,w_model,data):
     else:
         return [0]
 
-                
-
-
+'''          
 def convert2label(vector):
     for v in vector:
         if v==1:
@@ -67,5 +65,16 @@ def convert2label(vector):
             </body>
             '''
     return string_array
-    
+'''
+
+def convert2label(vector):
+    for v in vector:
+        if v==1:
+            string_array='sql_inject'
+        elif v==2:
+            string_array='xss_attack'
+        else:
+            string_array='normal_data'
+
+    return string_array 
 

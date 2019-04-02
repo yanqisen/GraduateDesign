@@ -10,7 +10,8 @@ for line in open('data/test_sql.txt','r'):
     if len(line):
         count+=1
         checked=check(model,w_model,line)
-        print(checked)
+        #print(checked)
+        print(convert2label(checked))
         if checked==0:
             normal+=1
         elif checked==1:
