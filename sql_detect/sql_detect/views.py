@@ -6,6 +6,7 @@ import json
 from django.http import HttpResponse
 from django.shortcuts import render
 import urllib.parse
+import keras
 
 def index(request):
     context={}
@@ -15,6 +16,7 @@ def index(request):
     print(test2)
     if test:
         urlcodestr=urllib.parse.quote(str(test))
+        keras.backend.clear_session()
         model,w_model=init()
         checked=check(model,w_model,urlcodestr)
         result=convert2label(checked)
@@ -23,3 +25,4 @@ def index(request):
     else:
         context={}
     return render(request, 'index.html', context)
+

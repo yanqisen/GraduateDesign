@@ -6,7 +6,7 @@ from word import getVecs
 import keras
 import sys
 import numpy as np
-def init():	      
+def init():
     model=load_model('bestcnn')
     w_model=Word2Vec.load("file/word2model")
     return model,w_model

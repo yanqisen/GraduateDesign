@@ -5,4 +5,5 @@ data里存放训练集，以及测试集。
 运行cnn.py对数据进行训练，得到检测模型。  
 或者使用mlp.py来训练，同样的到检测模型。
 然后运行test_normal.py来测试模型。 
-网站后台使用django。 
+网站后台使用django。  
+将file文件夹和test.py以及模型copy进sql_detect文件夹，然后用python manage.py runserver运行服务器，进行简单测试，目前仅支持单行数据，后续加入多行测试。
