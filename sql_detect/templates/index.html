@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+	<form method='post'>
+		{% csrf_token %}
+		<!--<input type="text" name="test2">-->
+		<textarea type="text" name="test"></textarea>
+		<input type="submit" value="提交">
+	</form>
+	<p>
+	{% for result in res %}       
+		{{ result }}
+	{% endfor %}
+	</P>
+</html>
