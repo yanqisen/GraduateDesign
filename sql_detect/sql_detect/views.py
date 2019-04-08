@@ -17,6 +17,7 @@ def index(request):
     if test:
         urlcodestr=urllib.parse.quote(str(test))
         keras.backend.clear_session()
+	#因为加载model在底层会生成session，一次识别之后session还会保留，所以二次识别会出错
         model,w_model=init()
         checked=check(model,w_model,urlcodestr)
         result=convert2label(checked)
